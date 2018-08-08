@@ -1,9 +1,40 @@
+h2 {
+    text-align: center;
+}
+
+.field {
+    align-items: center;
+    padding: 2px;
+    position:relative;
+    width: auto;
+    border-radius:5px;
+    border:solid 1px hsl(37, 62%, 74%);
+    background:hsl(28, 83%, 84%);
+    text-align:center;
+    padding:16px 18px 14px;
+    margin: 12px;
+}
+
+.btn-div {
+    align-items: center;
+    padding: 2px;
+    position:relative;
+    width: auto;
+    border-radius:5px;
+    border:solid 1px hsl(37, 62%, 74%);
+    background:hsl(28, 83%, 84%);
+    text-align:center;
+    padding:16px 18px 14px;
+    margin: 12px;
+}
+
+
 .result {
     padding: 2px;
     position:relative;
     width: auto;
     // display:inline-block;
-    color:#000000;
+    color:hsl(0, 0%, 0%);
     text-decoration:none;
     border-radius:5px;
     border:solid 1px hsl(37, 62%, 74%);
@@ -22,7 +53,7 @@
     color:hsl(0, 0%, 0%);
     text-decoration:none;
     border-radius:5px;
-    border:solid 1px hsl(37, 62%, 74%);
+    border:solid 1px hsl(37, 100%, 67%);
     background:hsl(28, 83%, 84%);
     text-align:center;
     padding:16px 18px 14px;
