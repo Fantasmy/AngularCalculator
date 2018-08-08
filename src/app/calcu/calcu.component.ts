@@ -13,7 +13,7 @@ export class CalcuComponent implements OnInit {
 
   sum()
   {
-    this.result = this.field1 + this.field2;
+    return this.result = this.field1 + this.field2;
   }
 
   substract()
@@ -31,7 +31,7 @@ export class CalcuComponent implements OnInit {
     this.result = this.field1 / this.field2;
   }
 
-
+  
   constructor() { }
 
   ngOnInit() {
