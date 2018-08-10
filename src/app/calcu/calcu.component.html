@@ -1,15 +1,15 @@
 
-<h2>Make your calculation here:</h2>
+<h2 id="title">Make your calculation here:</h2>
 <div class="field">
-<input class="input" [(ngModel)]='field1' type="number" name="field1" placeholder="Enter first number">
-<input class="input" [(ngModel)]='field2' type="number" name="field2" placeholder="Enter second number">
+<input id="field1" class="input" [(ngModel)]='field1' type="number" name="field1" placeholder="Enter first number">
+<input id="field2" class="input" [(ngModel)]='field2' type="number" name="field2" placeholder="Enter second number">
 </div>
 
 <div class="btn-div">
-<button class="btn" (click)='sum()'>Sum</button>
-<button class="btn" (click)='substract()'>Substract</button>
-<button class="btn" (click)='multiply()'>Multiply</button>
-<button class="btn" (click)='divide()'>Divide</button>
+<button id="sum" class="btn" (click)='sum()'>Sum</button>
+<button id="substraction" class="btn" (click)='substract()'>Substract</button>
+<button id="division" class="btn" (click)='multiply()'>Multiply</button>
+<button id="multiplication" class="btn" (click)='divide()'>Divide</button>
 </div>
 
 <div class="result">

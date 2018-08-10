@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { calculator } from './calculator';
 
 @Component({
   selector: 'abe-calcu',
@@ -10,29 +11,32 @@ export class CalcuComponent implements OnInit {
   public field1 :number;
   public field2 :number;
   public result :number;
+  public calc: calculator;
 
   sum()
   {
-    return this.result = this.field1 + this.field2;
+    this.result = this.calc.sum(this.field1,this.field2);
   }
 
   substract()
   {
-    this.result = this.field1 - this.field2;
+    this.result = this.calc.substract(this.field1,this.field2);
   }
 
   multiply()
   {
-    this.result = this.field1 * this.field2;
+    this.result = this.calc.multiply(this.field1,this.field2);
   }
 
   divide()
   {
-    this.result = this.field1 / this.field2;
+    this.result = this.calc.divide(this.field1,this.field2);
   }
 
   
-  constructor() { }
+  constructor() { 
+    this.calc = new calculator();
+  }
 
   ngOnInit() {
   }
